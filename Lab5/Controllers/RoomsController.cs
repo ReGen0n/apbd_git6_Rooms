@@ -20,7 +20,7 @@ namespace Lab5.Controllers
                 rooms = rooms.Where(r => r.Capacity >= minCapacity.Value);
 
             if (hasProjector.HasValue)
-                rooms = rooms.Where(r => r.HasProjector == hasProjector.Value);git 
+                rooms = rooms.Where(r => r.HasProjector == hasProjector.Value);
             if (isActive.HasValue)
                 rooms = rooms.Where(r => r.IsActive == isActive.Value);
 
